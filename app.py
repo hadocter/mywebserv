@@ -6,6 +6,14 @@ app = Flask(__name__)
 def hello():
     return render_template('index.html')
 
+@app.route('/jwnas')
+def jwnas():
+    return render_template('jwnas.html')
+
+@app.route('/cwnas')
+def cwnas():
+    return render_template('cwnas.html')
+
 @app.route('/info')
 def info():
     return 'this web is made by CWHa, The handsome'
